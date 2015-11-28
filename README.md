@@ -1,4 +1,4 @@
-# MarkovRensa
+# MarkovRensa [![Build Status](https://travis-ci.org/gin0606/markov_rensa-ruby.svg)](https://travis-ci.org/gin0606/markov_rensa-ruby)
 
 マルコフ連鎖で文章を生成する
 [kyow/igo-ruby](https://github.com/kyow/igo-ruby)を使っているのでMeCabなどは不要
