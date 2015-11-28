@@ -8,7 +8,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'markov_rensa'
+gem 'markov_rensa-ruby'
 ```
 
 And then execute:
@@ -17,7 +17,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install markov_rensa
+    $ gem install markov_rensa-ruby
 
 ## Usage
 

@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'markov_rensa/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "markov_rensa"
+  spec.name          = "markov_rensa-ruby"
   spec.version       = MarkovRensa::VERSION
   spec.authors       = ["gin0606"]
   spec.email         = ["kkgn06@gmail.com"]
