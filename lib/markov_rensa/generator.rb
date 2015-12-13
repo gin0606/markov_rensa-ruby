@@ -11,7 +11,7 @@ module MarkovRensa
     end
 
     def add_string(string)
-      sentences = string.scan(/[^。]*。/)
+      sentences = split_sentence(string)
       sentences.each do |sentence|
         wakati = tagger.wakati(sentence)
         start_wards << wakati[0, order]
@@ -39,6 +39,12 @@ module MarkovRensa
     end
 
     private
+
+    def split_sentence(string)
+      return [] if string.empty?
+      return [string] unless string.include?('。')
+      string.scan(/[^。]*。/)
+    end
 
     def tagger
       Tagger.new
