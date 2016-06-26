@@ -1,4 +1,4 @@
-require "mem"
+require 'mem'
 
 module MarkovRensa
   class Generator
@@ -6,7 +6,7 @@ module MarkovRensa
 
     attr_reader :order
 
-    def initialize(order=1)
+    def initialize(order = 1)
       @order = order
     end
 
@@ -16,7 +16,7 @@ module MarkovRensa
         wakati = tagger.wakati(sentence)
         start_wards << wakati[0, order]
 
-        until wakati.size < order + 1 do
+        until wakati.size < order + 1
           (wards[wakati[0, order]] ||= []) << wakati[order]
           wakati.shift
         end
@@ -26,14 +26,14 @@ module MarkovRensa
 
     def sentence
       sentence = (start_wards.sample || [])
-      while nw = (wards[sentence[-order, order]] || []).sample
+      while (nw = (wards[sentence[-order, order]] || []).sample)
         sentence << nw
       end
       sentence.join('')
     end
 
-    def sentences(n=1)
-      n.times.map do
+    def sentences(n = 1)
+      Array.new(n) do
         sentence
       end
     end

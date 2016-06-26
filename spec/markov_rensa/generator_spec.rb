@@ -31,13 +31,13 @@ describe MarkovRensa::Generator do
     context '文章渡した時' do
       let(:string) { 'メロスは激怒した。必ず、かの邪智暴虐の王を除かなければならぬと決意した。' }
       let(:sentences) { string.scan(/[^。]*。/) }
-      it { is_expected.to contain_exactly *sentences }
+      it { is_expected.to contain_exactly(*sentences) }
     end
 
     context '読点無い文字列渡した時' do
       let(:string) { '必ず、かの邪智暴虐の王を除かなければならぬと決意した' }
       let(:sentences) { [string] }
-      it { is_expected.to contain_exactly *sentences }
+      it { is_expected.to contain_exactly(*sentences) }
     end
   end
 
