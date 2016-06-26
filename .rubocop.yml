@@ -1,0 +1,11 @@
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/LineLength:
+  Max: 120
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
