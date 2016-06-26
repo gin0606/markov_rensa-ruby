@@ -1,4 +1,4 @@
-require "igo-ruby"
+require 'igo-ruby'
 
 module MarkovRensa
   class Tagger < Igo::Tagger
