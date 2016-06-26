@@ -1,4 +1,4 @@
-# MarkovRensa [![Gem Version](https://badge.fury.io/rb/markov_rensa-ruby.svg)](https://badge.fury.io/rb/markov_rensa-ruby) [![Build Status](https://travis-ci.org/gin0606/markov_rensa-ruby.svg)](https://travis-ci.org/gin0606/markov_rensa-ruby)
+# MarkovRensa [![Gem Version](https://badge.fury.io/rb/markov_rensa-ruby.svg)](https://badge.fury.io/rb/markov_rensa-ruby) [![Build Status](https://travis-ci.org/gin0606/markov_rensa-ruby.svg)](https://travis-ci.org/gin0606/markov_rensa-ruby) [![Code Climate](https://codeclimate.com/github/gin0606/markov_rensa-ruby/badges/gpa.svg)](https://codeclimate.com/github/gin0606/markov_rensa-ruby) [![Test Coverage](https://codeclimate.com/github/gin0606/markov_rensa-ruby/badges/coverage.svg)](https://codeclimate.com/github/gin0606/markov_rensa-ruby/coverage)
 
 マルコフ連鎖で文章を生成する
 [kyow/igo-ruby](https://github.com/kyow/igo-ruby)を使っているのでMeCabなどは不要
